@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7eab68255e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container-xl mt-3">
+        <div class="row d-flex justify-content-between">
+            <div class="col-6">
+                <h1>To DO APP</h1>
+            </div>
+            <div class="col-6 text-right align-self-center ">
+                <span><i class="fas fa-th-list"></i></span>
+            </div>
+        </div>
+        <div class="row bg-secondary app ">
+            <div class="col-12 col-md-4 px-5 mt-4 border-right">
+                <div class="row d-flex justify-content-between border-bottom ">
+                    <h3 class="text-warning">Project</h3>
+                </div>
+                <div class="row mt-2 d-flex justify-content-between">
+                    <div class="mb-3 col">
+                        <div class="row">
+                            <div class="col-12">
+                                <label class="form-label text-light">Project Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <input type="text" class="form-control mx-0" id="projectName">
+                            </div>
+                            <div class="col-4">
+                                <button type="submit" class="pnAdd border btn btn-md btn-primary px-1">Add</button>
+                            </div>
+                        </div>
+                        <div class="col-10 pt-2 pb-2 eklenecek">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 mt-4 ">
+                <div class="row border-bottom mt-1 w-80 mx-3">
+                    <h4 class="text-warning">Your Project Library</h4>
+                </div>
+                <div class="row border-bottom pt-2 pb-2 mx-3">
+                    <button class="btn my-auto bg-light addObjectButton">+</button>
+                    <h4 class="my-auto text-danger px-2">Add ToDo</h4>
+                </div>
+                <form class="d-none row mx-1">
+                    <div class="mb-3 col-12">
+                        <label for="exampleInputEmail1" class="form-label">Topic</label>
+                        <input type="text" class="form-control " id="topic">
+                    </div>
+                    <div class="mb-3 col-12">
+                        <label for="exampleInputPassword1" class="form-label">Description</label>
+                        <input type="text" class="form-control " id="desc">
+                    </div>
+                    <div class="col-12 mx-3">
+                        <div class="mb-3 form-check row">
+                            <input type="checkbox" class="form-check-input" id="exampleCheckOne">
+                            <label class="form-check-label" for="exampleCheckOne">Urgent ?</label>
+                        </div>
+                        <div class="row">
+                            <button type="submit" class="btn btn-primary submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+                <form class="d-none changeForm row mx-1">
+                    <div class="mb-3 col-12">
+                        <label for="exampleInputEmail1" class="form-label">Change Topic</label>
+                        <input type="text" class="form-control " id="topicOne">
+                    </div>
+                    <div class="mb-3 col-12">
+                        <label for="exampleInputPassword1" class="form-label">Change Description</label>
+                        <input type="text" class="form-control " id="descOne">
+                    </div>
+                    <div class="col-12 mx-3">
+                        <div class="mb-3 form-check row">
+                            <input type="checkbox" class="form-check-input" id="exampleCheckOneOne">
+                            <label class="form-check-label" for="exampleCheckOne">Urgent ?</label>
+                        </div>
+                        <div class="row">
+                            <button type="submit" class="btn btn-primary submit2">Submit</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="renderObjects ">
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="./bundle.js"></script>
+</body>
+
+</html>
